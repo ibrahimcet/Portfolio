@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/projects.css">
+	<link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+	<div class="nav-bar">
+      
+
+      <ul class="content-holder">
+        <li class="not-active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Projects</a></li>
+        <li class="not-active"><a href="#">Erasmus</a></li>
+      </ul>
+
+      <ul class="social-media-accounts">
+        <li class="facebook"><a href="http://linkedin.com/in/ibrahim-çetin-053364139"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li class="twitter"><a href="https://www.instagram.com/ibrahimcettt/?hl=tr"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li class="instagram"><a href="https://www.facebook.com/profile.php?id=100009623200751"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul></div>
+
+
+
+
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'Findsmth')" id="defaultOpen">Find Something</button>
+	  <button class="tablinks" onclick="openCity(event, 'Lifeye')">Life Eye</button>
+	  <button class="tablinks" onclick="openCity(event, 'Reminder')">Reminder</button>
+	  <button class="tablinks" onclick="openCity(event, '#wars')">'#' wars</button>
+	  <button class="tablinks" onclick="openCity(event, 'Ownplayer')">Own Player</button>
+	  <button class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
+	</div>
+
+	<div id="Findsmth" class="tabcontent">
+	  <h3>Find Something</h3>
+	  <p>That was a group project. I worked with 5 more people. I was Backend Developer
+		It is a online application its combine of twitter and Instagram. I used ASP .NET on this project. I created databases and connections also. I learned work with another people and use BitBucket.</p>
+		<div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	</div>
+
+	<div id="Lifeye" class="tabcontent">
+	  <h3>Life Eye</h3>
+	  <p>This is my thesis. The main subject of this project blind people. We are creating an Arduino project which checking the area and when the sensor find a something below the our guy It's sending a signal to the phone. And the android application of this project says the distance of object.</p> 
+	  <div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	 
+	</div>
+
+	<div id="Reminder" class="tabcontent">
+	  <h3>Reminder</h3>
+	  <p>I had busy schedule for that reason I needed a reminder application. I didn't want to use another applications. I created my own reminder application. In this project, I use, SQLite database. In this application you are giving time, date and content for remind.</p>
+	  <div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	</div>
+
+	<div id="#wars" class="tabcontent">
+	  <h3>'#' wars</h3>
+	  <p>This project is clone application of twitter. I wanted to learn android programming. And I am designing this application.<br><br><br><br></p>
+	  <div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	</div>
+
+	<div id="Ownplayer" class="tabcontent">
+	  <h3>Own Player</h3>
+	  <p>This project is working similar with Spotify. I wanted to improve my android programming
+		skills. I am designed this application. I used to SQLite database and application is scanning your phone memory and its catching mp3 files. You can download your musics and listen offline in the application. You don't need connection.</p>
+		<div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	</div>
+	<div id="Travel" class="tabcontent">
+	  <h3>Travel</h3>
+	  <p>I have been an exchange student in Germany for my Erasmus+ programme.In this time , i had chance to travel all around the world. I have been in so many cities and countries; Stockholm/Sweden, Helsinki/Finland , Berlin/Germany , Rome/Italy just and more...
+	  And we wanted to share our experience with other people.    
+	  
+	  </p>
+		<div class="link">
+	  	<span>Github</span>
+	  	<a class="icon" href="#"><ion-icon name="logo-github"></ion-icon></a>
+	  </div>
+	</div>
+
+
+	<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+   
+
+</body>
+</html>

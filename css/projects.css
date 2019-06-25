@@ -1,0 +1,367 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: #313131;
+}
+.blur-effect{
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000000a6;
+}
+.nav-bar{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #696969;
+  height: 100px;
+}
+.nav-bar .content-holder{
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .content-holder .active a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+.nav-bar .content-holder .active a:hover{
+  color: yellow;
+  border-bottom: 1px solid yellow;
+  transition: .3s;
+}
+.nav-bar .content-holder .not-active a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+.nav-bar .content-holder .not-active a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  transition: .3s;
+}
+.nav-bar .social-media-accounts{
+  position: absolute;
+  top: 3%;
+  left: 80%;
+  font-size: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .social-media-accounts li a{
+  text-decoration: none;
+  color: #fff6;
+  margin-right: 3px;
+}
+.nav-bar .social-media-accounts li a:hover{
+  font-size: 25px;
+  color: #fff;
+  transition: .2s;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 50px;
+
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: 	#A9A9A9;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+  color:#FF8C00;
+  font-size: 23px;
+  -webkit-box-shadow: 2px 2px 31px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 2px 31px 4px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 31px 4px rgba(0,0,0,0.75);
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 50%;
+  border-left: none;
+  height: 388px;
+  margin-top: 40px;
+ -webkit-box-shadow: 2px 0px 31px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 31px 4px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 31px 4px rgba(0,0,0,0.75);
+  background-color: #FF8C00;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Kodchasan', sans-serif;
+  letter-spacing: 3px;
+}
+.link{
+	float: right;
+	margin-top: 145px;
+	right: 0;
+}
+.link:hover{
+	color:black;
+}
+.icon{
+	font-size: 30px;
+}
+@media only screen and (max-width: 425px){
+
+  .nav-bar{
+    width: 115.5%;
+    height: 80px;
+  }
+  .nav-bar .content-holder{
+    top: 3%;
+    left: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .nav-bar .content-holder .active a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: orange;
+    margin-left: 0;
+    border-bottom: 1px solid orange;
+  }
+  .nav-bar .content-holder .not-active a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  .nav-bar .social-media-accounts{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .social-media-accounts li a{
+    text-decoration: none;
+    color: #fff6;
+    margin-right: 25px;
+  }
+  .nav-bar .social-media-accounts li a:hover{
+    font-size: 25px;
+    color: #fff;
+    transition: .2s;
+  }
+
+  .tab {
+    width: 250px;
+    height: 300px;
+    margin-left: 100px;
+  }
+
+  .tabcontent {
+     width: 250px;
+    margin-top: 120px;
+      margin-left: 85px;
+  }
+  .link{
+  margin-top: 80px;
+  margin-left: 100px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+  .nav-bar{
+    width: 115.5%;
+    height: 80px;
+  }
+  .nav-bar .content-holder{
+    top: 3%;
+    left: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .content-holder .active a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: orange;
+    margin-left: 0;
+    border-bottom: 1px solid orange;
+  }
+  .nav-bar .content-holder .not-active a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  .nav-bar .social-media-accounts{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .social-media-accounts li a{
+    text-decoration: none;
+    color: #fff6;
+    margin-right: 25px;
+  }
+  .nav-bar .social-media-accounts li a:hover{
+    font-size: 25px;
+    color: #fff;
+    transition: .2s;
+  }
+  .tab {
+    width: 250px;
+    height: 300px;
+    margin-left: 100px;
+  }
+  .tabcontent {
+     width: 250px;
+    margin-top: 120px;
+      margin-left: 85px;
+  }
+  .link{
+  margin-top: 80px;
+  margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .nav-bar{
+    width: 115.5%;
+    height: 80px;
+  }
+  .nav-bar .content-holder{
+    top: 3%;
+    left: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .content-holder .active a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    color: orange;
+    margin-left: 0;
+    border-bottom: 1px solid orange;
+  }
+  .nav-bar .content-holder .not-active a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  .nav-bar .social-media-accounts{
+    position: absolute;
+    top: 3%;
+    left: 65%;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar .social-media-accounts li a{
+    text-decoration: none;
+    color: #fff6;
+    margin-right: 25px;
+  }
+  .nav-bar .social-media-accounts li a:hover{
+    font-size: 25px;
+    color: #fff;
+    transition: .2s;
+  }
+  .tab {
+    width: 250px;
+    height: 300px;
+    margin-left: 60px;
+  }
+  .tabcontent {
+     width: 250px;
+    margin-top: 120px;
+      margin-left: 40px;
+  }
+.link{
+	margin-top: 100px;
+  margin-left: 40px;
+}
+}
